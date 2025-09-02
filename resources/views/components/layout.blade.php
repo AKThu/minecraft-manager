@@ -9,12 +9,15 @@
     <title>Minecraft Manager</title>
 </head>
 
-<body class="font-roboto">
+<body class="font-roboto bg-slate-50">
 
-    <x-navbar></x-navbar>
-
-    {{ $slot }}
     
+    <main class="min-h-screen">
+        <x-navbar></x-navbar>
+        {{ $slot }}
+    </main>
+    
+    <x-footer></x-footer>
 </body>
 
 </html>

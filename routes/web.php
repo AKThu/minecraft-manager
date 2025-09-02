@@ -5,5 +5,6 @@ use App\Http\Controllers\WorldsController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomeController::class);
-Route::get('/worlds', WorldsController::class);
+Route::get('/worlds', [WorldsController::class, 'index']);
+Route::get('/worlds/world', [WorldsController::class, 'show']);
 
